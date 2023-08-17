@@ -1,12 +1,12 @@
 /****** General ***********/
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-size: 22px;
   font-weight: bold;
-  color: brown;
+  color: rgb(233, 15, 189);
 }
 
 /*# sourceMappingURL=style.css.map */
