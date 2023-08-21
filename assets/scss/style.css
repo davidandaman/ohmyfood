@@ -1,12 +1,130 @@
-/****** General ***********/
+@charset "UTF-8";
+/****** Variables ***********/
+/****** Colors ***********/
+/****** Mixins ***********/
+/****** Fonts ***********/
 * {
   font-family: "Roboto", sans-serif;
 }
 
+.ohmyfood-font {
+  font-family: "Shrikhand", cursive;
+}
+
+/****** General ***********/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
 h1 {
-  font-size: 22px;
-  font-weight: bold;
-  color: rgb(233, 15, 189);
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+.logo-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.logo-header {
+  padding-top: 21px;
+  padding-bottom: 14px;
+}
+.logo-header img {
+  display: block;
+  width: 186px;
+  height: 28px;
+  background-size: 100%;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2) inset;
+}
+.location a {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+/****** Lien Go Back Header ***********/
+.icon-goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 63px;
+  position: absolute;
+  top: 0px;
+  left: 14px;
+}
+.icon-goback a {
+  color: #353535;
+}
+
+/****** Réservez et Fonctionnement ***********/
+.reserver-explorer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reserver-explorer h1 {
+  text-align: center;
+  padding: 20px 0px 15px 0px;
+}
+.reserver-explorer h2 {
+  text-align: center;
+}
+
+/****** Lien - Explorer nos restaurants ***********/
+.cta {
+  display: inline-block;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(354deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  border-radius: 50px;
+  padding: 20px 30px;
+  margin: 30px 0px 30px 0px;
+  text-decoration: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cta:hover {
+  background: rgb(147, 86, 220);
+  background: linear-gradient(230deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+}
+
+/****** Fonctionnement ***********/
+.fonctionnement {
+  background-color: #ffffff;
+  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
