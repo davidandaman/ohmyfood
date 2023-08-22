@@ -3,9 +3,13 @@
         $light-grey: #F3F3F3;
         $dark-grey: #101010;
         $dark-grey-plus: #353535;
+        $dark-max:#000000;
+        $grey-icon: #7E7E7E;
         $grey--location: #EAEAEA;
         $bg-grey-color: #f6f6f6;
         $bg-light-color: #FFFFFF;
+        $purple: #9356DC;
+
 
 /****** Mixins ***********/
 @mixin cta-button {
@@ -17,7 +21,7 @@
     margin: 30px 0px 30px 0px;
     text-decoration: none;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
 }
 
 @mixin cta-button-hover {
@@ -25,8 +29,19 @@
     background: linear-gradient(230deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 }
 
+@mixin cta-button-light {
+    display: inline-block;
+    background: $bg-grey-color;
+    border-radius: 25px;
+    border:none;
+    padding: 25px 25px;
+    text-decoration: none;
+    color: $dark-max;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+}
 /****** Fonts ***********/
 * { font-family: 'Roboto', sans-serif;}
+
 .ohmyfood-font {font-family: 'Shrikhand', cursive;}
 
 
@@ -49,6 +64,16 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****** Header ***********/
 header {
     display: flex;
     width: 100%;
@@ -71,7 +96,7 @@ header {
         width: 186px;
         height: 28px;
         background-size: 100%;
-    }
+        }
 }
 
 .location {
@@ -88,7 +113,7 @@ header {
         font-size: 16px;
         font-weight: 500;
         padding-left: 15px;
-    }
+        }
 }
 
 /****** Lien Go Back Header ***********/
@@ -104,11 +129,10 @@ header {
 
     a {
         color: $dark-grey-plus;
-    }
+        }
 }
 
 /****** Réservez et Fonctionnement ***********/
-
 .reserver-explorer {
     display: flex;
     flex-direction: column;
@@ -118,11 +142,11 @@ header {
     h1 {
         text-align: center;
         padding: 20px 0px 15px 0px;
-    }
+        }
 
     h2 {
         text-align: center;
-    }
+        }
 }
 
 
@@ -135,8 +159,65 @@ header {
     @include cta-button-hover;
   }
 
+
 /****** Fonctionnement ***********/  
 .fonctionnement {
-    background-color:#ffffff;
-    height: 200px;
+    background-color:$bg-light-color;
+    padding: 50px 10px 50px 20px;
 }
+
+.buttons-fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px 20px 10px;
+}
+
+.btn-fonctionnement {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.card { 
+
+
+
+    button { 
+      @include cta-button-light;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    i {
+    color: $grey-icon;
+    padding-right: 20px;
+    padding-left: 10px;
+    }
+
+    i:hover {
+    color: $purple;
+    }
+}
+
+.puce-number {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color:$purple;
+    color: $bg-light-color;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px;
+    margin-top: -45px;
+    margin-left: -10px;
+}
+
+
