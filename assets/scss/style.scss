@@ -182,8 +182,6 @@ header {
 
 .card { 
 
-
-
     button { 
       @include cta-button-light;
       display: flex;
@@ -204,6 +202,7 @@ header {
     color: $purple;
     }
 }
+
 
 .puce-number {
     display: block;
