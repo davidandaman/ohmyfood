@@ -82,7 +82,7 @@ header {
   padding-left: 15px;
 }
 
-/****** Lien Go Back Header ***********/
+/****** Lien Go Back Header - Page Restaurants ***********/
 .icon-goback {
   display: flex;
   align-items: center;
@@ -97,12 +97,19 @@ header {
   color: #353535;
 }
 
+/****** Réserver-et-Fonctionnement ***********/
+.reserver-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
 /****** Réservez et Fonctionnement ***********/
 .reserver-explorer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 0px 20px 0px;
 }
 .reserver-explorer h1 {
   text-align: center;
@@ -112,19 +119,13 @@ header {
   text-align: center;
 }
 
-/****** Réserver-et-Fonctionnement ***********/
-.reserver-fonctionnement {
-  display: flex;
-  flex-direction: column;
-}
-
 /****** Lien - Explorer nos restaurants ***********/
 .cta {
   display: inline-block;
   background: rgb(147, 86, 220);
   background: linear-gradient(354deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   border-radius: 50px;
-  padding: 20px 30px;
+  padding: 16px 30px;
   margin: 30px 0px 30px 0px;
   text-decoration: none;
   color: white;
@@ -141,19 +142,22 @@ header {
   background-color: #FFFFFF;
   padding: 50px 10px 50px 20px;
 }
+.fonctionnement h1 {
+  padding: 0px 0px 30px 0px;
+}
 
 .buttons-fonctionnement {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 10px 20px 10px;
+  padding: 0px 10px 20px 10px;
 }
 
 .btn-fonctionnement {
   width: 100%;
   height: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .card button {
