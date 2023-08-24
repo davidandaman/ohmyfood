@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/****** Variables ***********/
 /****** Colors ***********/
 /****** Mixins ***********/
 /****** Fonts ***********/
@@ -113,6 +112,12 @@ header {
   text-align: center;
 }
 
+/****** Réserver-et-Fonctionnement ***********/
+.reserver-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
 /****** Lien - Explorer nos restaurants ***********/
 .cta {
   display: inline-block;
@@ -128,7 +133,7 @@ header {
 
 .cta:hover {
   background: rgb(147, 86, 220);
-  background: linear-gradient(230deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(349deg, rgb(147, 86, 220) 0%, rgba(255, 121, 218, 0.7511379552) 100%);
 }
 
 /****** Fonctionnement ***********/
