@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oh my food</title>
     <link rel="stylesheet" href="./assets/scss/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <script
-    src="https://kit.fontawesome.com/83352c9a3a.js"
-    crossorigin="anonymous"
-  ></script>
-</head>
-<body>
-<!-- Header -->
-<header>
-  <div class="logo-location">   
-    <div class="logo-header">
-      <img src="assets/images/logo/ohmyfood@2x.svg" alt="ohmyfood"/>
-    </div>
-    <!-- Solution 2 : Logo avec la fonte, trop gras <h1 class="ohmyfood-font">ohmyfood</h1> changer le nom de la css  -->
-    <div class="location">
-      <div>
-        <i class="fa-solid fa-location-dot"></i>
+      src="https://kit.fontawesome.com/83352c9a3a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-location">
+        <div class="logo-header">
+          <img src="assets/images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+        </div>
+        <!-- Solution 2 : Logo avec la fonte, trop gras <h1 class="ohmyfood-font">ohmyfood</h1> changer le nom de la css  -->
+        <div class="location">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <a>Paris, Belleville</a>
+        </div>
       </div>
-        <a>Paris, Belleville</a>
-      </div>
-    </div>
-</header>
-<!-- Main -->
-<main>
-
-<!-- Réserver-et-Fonctionnement -->
-  <section class="reserver-fonctionnement">
-  <!-- Réservez -->
-    <div class="reserver-explorer">
-      <h1>Réservez le menu qui<br>vous convient</h1>
-      <h2>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
-      <a href="assets/restaurants/la-palette-du-gout.html" class="cta">Explorer nos restaurants</a>
-      </div>
-    <!-- Fonctionnement -->
-    <div class="fonctionnement">
-      <h1>Fonctionnement</h1>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Réserver-et-Fonctionnement -->
+      <section class="reserver-fonctionnement">
+        <!-- Réservez -->
+        <div class="reserver-explorer">
+          <h1>Réservez le menu qui<br />vous convient</h1>
+          <h2>
+            Découvrez des restaurants d’exception, sélectionnés par nos soins.
+          </h2>
+          <a href="assets/restaurants/la-palette-du-gout.html" class="cta"
+            >Explorer nos restaurants</a
+          >
+        </div>
+        <!-- Fonctionnement -->
+        <div class="fonctionnement">
+          <h1>Fonctionnement</h1>
           <!-- Cards-Fonctionnement -->
           <!-- Choisissez un restaurant -->
           <div class="button-fonctionnement">
             <div class="card">
               <div class="puce-number">1</div>
-                <a href="/index.html">
+              <a href="/index.html">
                 <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
-                Choisissez un restaurant
-                </a>
-              </div>
+                <a class="txt-fonctionnement">Choisissez un restaurant</a>
+              </a>
             </div>
-
+          </div>
           <!-- Composez votre menu -->
           <div class="button-fonctionnement">
             <div class="card">
               <div class="puce-number">2</div>
-                <a href="/index.html">
-                  <i class="fa-solid fa-list-ul fa-lg"></i>
-                  Composez votre menu
-                </a>
-              </div>
+              <a href="https://www.w3schools.com/">
+                <i class="fa-solid fa-list-ul fa-lg"></i>
+                <a class="txt-fonctionnement">Composez votre menu</a>
+              </a>
             </div>
-
-
+          </div>
           <!-- Dégustez au restaurant -->
           <div class="button-fonctionnement">
             <div class="card">
               <div class="puce-number">3</div>
-                <a href="/index.html">
-                  <i class="fa-solid fa-store fa-lg"></i>
-                  Dégustez au restaurant
-                </a>
-              </div>
+              <a href="https://www.w3schools.com/">
+                <i class="fa-solid fa-store fa-lg"></i>
+                <a class="txt-fonctionnement">Dégustez au restaurant</a>
+              </a>
             </div>
-
-
-    </div>
-  </section>
-</main>
-
+          </div>
+        </div>
+      </section>
 
 
 
+        <!-- Restaurants -->
+      <section class="restaurants">
+        <h1>Restaurants</h1>
+          <div class="restaurant-cards">
+            <a href="#">
+              <article class="card">
+                <img
+                src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="La palette du goût"/>
+              
+                <div class="card-content">
+                  
+                  <div class="nom-restaurant">
+                    <h3 class="card-title-restaurant">La palette du goût</h3>
+                    <a>Ménilmontant</a>
+                  </div>
+                
 
-</body>
+                  <div class="coeur">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                      <path d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z" fill="url(#paint0_linear_92728_527)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_92728_527" x1="11.0002" y1="-5.4601" x2="3.43443" y2="27.9923" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9356DC"/>
+                      <stop offset="1" stop-color="#FF79DA"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                  </div>
+
+                </div>
+              
+         
+              </article>
+            </a>
+          </div>
+      </section>
+    </main>
+  </body>
 </html>
