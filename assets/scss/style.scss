@@ -15,28 +15,24 @@ $black: #000000;
 /****** Mixins ***********/
 @mixin cta-button {
   display: inline-block;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(
-    354deg,
-    rgba(147, 86, 220, 1) 0%,
-    rgba(255, 121, 218, 1) 100%
-  );
   border-radius: 50px;
-  padding: 16px 30px;
+  padding: 16px 26px;
   margin: 30px 0px 30px 0px;
   text-decoration: none;
   color: white;
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  background-color: rgb(147, 86, 220);
+  background-image: linear-gradient(-200deg, rgba(255, 121, 218, .8), rgba(255,255,255,0));
+  transition: background-color 1s;
 }
 
 @mixin cta-button-hover {
-  background: rgb(147, 86, 220);
-  background: linear-gradient(
-    349deg,
-    rgba(147, 86, 220, 1) 0%,
-    rgba(255, 121, 218, 0.7511379551820728) 100%
-  );
+  background-color: rgb(147, 86, 220, .7);
+  background-image: linear-gradient(-300deg, rgba(255, 121, 218, .6), rgba(255,255,255,0));
+
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 4px 10px;
+  transition: background-color 1s;
 }
 
 @mixin cta-button-light {
@@ -258,7 +254,7 @@ header {
   /****** Restaurants - Global ***********/
   
   .restaurants {
-    padding: 50px 17px 60px 17px;
+    padding: 60px 17px 60px 17px;
 
     h2 {
       padding-bottom: 15px;
@@ -314,44 +310,58 @@ header {
     .restaurant-name {
       width: 90%;
     }
-    
-    .heart {
-      width: 10%;
-      padding-top: 8px;
-      text-align: right;
-      margin-right: -65px;
-    }
+  
+  }
 
-    .material-symbols-sharp {
+
+  .heart {
+    display: block;
+    width: 10%;
+    padding-top: 8px;
+    text-align: right;
+    margin-right: -65px;
+  }
+
+
+
+
+
+  .fill .material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+      font-size: 30px;      
+      background-color: rgb(147, 86, 220);
+      background-image: linear-gradient(-200deg, rgba(255, 121, 218, .8), rgba(255,255,255,0));
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+      transition-timing-function: ease-out;
+      transition: 0.6s;
+     }
+
+
+     .unfill .material-symbols-sharp {
       font-variation-settings:
-        'FILL' 0,
-        'wght' 200,
-        'GRAD' -25,
-        'opsz' 48;
+      'FILL' 0,
+      'wght' 200,
+      'GRAD' 0,
+      'opsz' 48;
         font-size: 30px;      
         background:#000000;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
-       }
+        transition-timing-function: ease-in;
+        transition: 0.6s;
+        }
+  
 
-    .fill .material-symbols-sharp {
-      font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' -25,
-        'opsz' 48;
-        font-size: 28px;      
-        background:-moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%); 
-        background: -webkit-linear-gradient(top, #FF79DA 0%,#9356DC 100%); 
-        background: linear-gradient(to bottom, #FF79DA 0%,#9356DC 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
-       }
-  }
+
 
 .new-restaurant {
   display: block;
@@ -398,6 +408,43 @@ header {
     i {
       width:25px;
     }
-
   }
 
+
+      
+
+  .container {
+    font-size: 14px;
+    cursor: pointer;
+      caret-color: transparent;
+    display: block;
+    display: flex;
+       align-items: center;
+
+  }
+  
+  img { padding-right: 5px;}
+  
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    display: none;
+  }
+  
+  /* Hide the checked checkbox */
+.img-checked {
+    display: none;
+  }
+  
+  /*  Display the checked image when checked */
+  .container input:checked ~ .img-checked {
+    display: inline;
+  }
+  
+  /*  Hide the unchecked image when checked */
+  .container input:checked ~ .img-unchecked {
+    display: none;
+  }
+
+
+     
