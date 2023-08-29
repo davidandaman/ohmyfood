@@ -270,7 +270,7 @@ header {
   margin-right: -65px;
 }
 
-.fill .material-symbols-sharp {
+.gradient-heart .material-symbols-sharp {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   font-size: 30px;
   background-color: rgb(147, 86, 220);
@@ -283,8 +283,8 @@ header {
   transition: 0.6s;
 }
 
-.unfill .material-symbols-sharp {
-  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+.empty-heart .material-symbols-sharp {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
   font-size: 30px;
   background: #000000;
   -webkit-background-clip: text;
@@ -337,7 +337,7 @@ footer i {
   width: 25px;
 }
 
-.container {
+.container-heart {
   font-size: 14px;
   cursor: pointer;
   caret-color: transparent;
@@ -351,7 +351,7 @@ img {
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.container-heart input {
   display: none;
 }
 
@@ -361,12 +361,12 @@ img {
 }
 
 /*  Display the checked image when checked */
-.container input:checked ~ .img-checked {
+.container-heart input:checked ~ .img-checked {
   display: inline;
 }
 
 /*  Hide the unchecked image when checked */
-.container input:checked ~ .img-unchecked {
+.container-heart input:checked ~ .img-unchecked {
   display: none;
 }
 

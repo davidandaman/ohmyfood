@@ -323,43 +323,42 @@ header {
   }
 
 
-
-
-
-  .fill .material-symbols-sharp {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-      font-size: 30px;      
-      background-color: rgb(147, 86, 220);
-      background-image: linear-gradient(-200deg, rgba(255, 121, 218, .8), rgba(255,255,255,0));
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color:transparent;
-      transition-timing-function: ease-out;
-      transition: 0.6s;
-     }
-
-
-     .unfill .material-symbols-sharp {
+  .gradient-heart .material-symbols-sharp {
       font-variation-settings:
-      'FILL' 0,
-      'wght' 200,
+      'FILL' 1,
+      'wght' 400,
       'GRAD' 0,
-      'opsz' 48;
+      'opsz' 24;
         font-size: 30px;      
-        background:#000000;
+        background-color: rgb(147, 86, 220);
+        background-image: linear-gradient(-200deg, rgba(255, 121, 218, .8), rgba(255,255,255,0));
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
-        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
         transition: 0.6s;
-        }
-  
+      }
+
+
+
+  .empty-heart .material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24;
+      font-size: 30px;      
+      background:#000000;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+      transition-timing-function: ease-in;
+      transition: 0.6s;
+     }
+
+
 
 
 
@@ -413,13 +412,13 @@ header {
 
       
 
-  .container {
+  .container-heart {
     font-size: 14px;
     cursor: pointer;
-      caret-color: transparent;
+    caret-color: transparent;
     display: block;
     display: flex;
-       align-items: center;
+    align-items: center;
 
   }
   
@@ -427,7 +426,7 @@ header {
   
   
   /* Hide the browser's default checkbox */
-  .container input {
+  .container-heart input {
     display: none;
   }
   
@@ -437,12 +436,12 @@ header {
   }
   
   /*  Display the checked image when checked */
-  .container input:checked ~ .img-checked {
+  .container-heart input:checked ~ .img-checked {
     display: inline;
   }
   
   /*  Hide the unchecked image when checked */
-  .container input:checked ~ .img-unchecked {
+  .container-heart input:checked ~ .img-unchecked {
     display: none;
   }
 
