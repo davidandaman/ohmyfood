@@ -61,14 +61,14 @@ header {
 }
 
 .logo-header {
-  padding-top: 21px;
-  padding-bottom: 14px;
-}
-.logo-header img {
-  display: block;
-  width: 186px;
-  height: 28px;
-  background-size: 100%;
+  width: 100%;
+  height: 64px;
+  background-image: url(../images/logo/ohmyfood@2x.svg);
+  background-repeat: no-repeat;
+  background-position: center 21px;
+  background-size: 186px 28px;
+  font-size: 0px;
+  color: transparent;
 }
 
 .location {
@@ -116,15 +116,16 @@ header {
   align-items: center;
   padding: 20px 0px 30px 0px;
 }
-.reserver-explorer h1 {
+.reserver-explorer h2 {
   text-align: center;
   padding: 20px 0px 15px 0px;
 }
-.reserver-explorer h2 {
+.reserver-explorer h3 {
   font-size: 18px;
   text-align: center;
   font-weight: 300;
   color: #353535;
+  max-width: 320px;
 }
 
 /****** Lien - Explorer nos restaurants ***********/
@@ -154,7 +155,7 @@ header {
   padding: 50px 10px 40px 20px;
 }
 .fonctionnement h2 {
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 15px 0px;
 }
 
 .button-fonctionnement {
@@ -221,7 +222,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 11px;
+  gap: 15px;
   margin-top: 5px;
 }
 .restaurant-cards .card {
@@ -262,15 +263,20 @@ header {
   width: 90%;
 }
 
-.heart {
-  display: block;
-  width: 10%;
-  padding-top: 8px;
-  text-align: right;
-  margin-right: -65px;
+.card-and-favorite {
+  background-color: transparent;
 }
 
-.fill .material-symbols-sharp {
+/* Favorite icon */
+.icon-favorite {
+  display: block;
+  float: right;
+  width: 50px;
+  height: 30px;
+  margin-top: -55px;
+}
+
+.gradient-heart .material-symbols-sharp {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   font-size: 30px;
   background-color: rgb(147, 86, 220);
@@ -280,11 +286,11 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-timing-function: ease-out;
-  transition: 0.6s;
+  transition: all 450ms;
 }
 
-.unfill .material-symbols-sharp {
-  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+.empty-heart .material-symbols-sharp {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
   font-size: 30px;
   background: #000000;
   -webkit-background-clip: text;
@@ -292,7 +298,37 @@ header {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition-timing-function: ease-in;
-  transition: 0.6s;
+  transition: all 450ms;
+}
+
+/* How To display and hide the favorite icon */
+.container-heart {
+  font-size: 14px;
+  cursor: pointer;
+  caret-color: transparent;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+/* Hide the browser's default checkbox */
+.container-heart input {
+  display: none;
+}
+
+/* Hide the checked checkbox */
+.img-checked {
+  display: none;
+}
+
+/*  Display the checked image when checked */
+.container-heart input:checked ~ .img-checked {
+  display: inline;
+}
+
+/*  Hide the unchecked image when checked */
+.container-heart input:checked ~ .img-unchecked {
+  display: none;
 }
 
 .new-restaurant {
@@ -307,7 +343,6 @@ header {
   padding: 7px 14px 6px 12px;
   margin-top: -160px;
   margin-right: 12px;
-  z-index: 600;
 }
 
 /****** Footer ***********/
@@ -318,7 +353,7 @@ footer {
   color: #ffffff;
   padding: 22px 25px 12px 25px;
 }
-footer h1 {
+footer h2 {
   padding-bottom: 18px;
   font-size: 18px;
   font-weight: 100;
@@ -335,39 +370,6 @@ footer a {
 }
 footer i {
   width: 25px;
-}
-
-.container {
-  font-size: 14px;
-  cursor: pointer;
-  caret-color: transparent;
-  display: block;
-  display: flex;
-  align-items: center;
-}
-
-img {
-  padding-right: 5px;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  display: none;
-}
-
-/* Hide the checked checkbox */
-.img-checked {
-  display: none;
-}
-
-/*  Display the checked image when checked */
-.container input:checked ~ .img-checked {
-  display: inline;
-}
-
-/*  Hide the unchecked image when checked */
-.container input:checked ~ .img-unchecked {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

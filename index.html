@@ -23,7 +23,7 @@
     <header>
       <div class="logo-location">
         <div class="logo-header">
-          <img src="assets/images/logo/ohmyfood@2x.svg" alt="ohmyfood" />
+          <h1 class="ohmyfood-font">ohmyfood</h1>
         </div>
         <div class="location">
           <div>
@@ -33,16 +33,16 @@
         </div>
       </div>
     </header>
-    <!-- Main -->
-    <main>
+<!-- Main -->
+<main>
     <!-- Réserver-et-Fonctionnement -->
       <section class="reserver-fonctionnement">
         <!-- Réservez -->
         <div class="reserver-explorer">
-          <h1>Réservez le menu qui<br />vous convient</h1>
-          <h2>
+          <h2>Réservez le menu qui<br />vous convient</h2>
+          <h3>
             Découvrez des restaurants d’exception, sélectionnés par nos soins.
-          </h2>
+          </h3>
           <a href="#resto" class="cta">Explorer nos restaurants
           </a>
         </div>
@@ -84,12 +84,14 @@
       </section>
       <!-- Restaurants -->
       <section class="restaurants">
-        <h2>Restaurants</h2>
-          <div class="restaurant-cards">
+        <div id="resto"></div>
+          <h2>Restaurants</h2>
+            <div class="restaurant-cards">
             <!-- La palette du goût -->
-            <a href="/assets/restaurants/la-palette-du-gout.html">
-              <article class="card">
-                <img
+            <div class="card-and-favorite">
+              <a href="assets/restaurants/la-palette-du-gout.html">
+                <article class="card">
+                  <img
                 src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="La palette du goût"/>
                 <div class="new-restaurant"> 
@@ -100,136 +102,142 @@
                       <h3>La palette du goût</h3>
                       Ménilmontant
                     </div>
-                    <div class="heart">
-                      <label class="container" style="font-size:20px">
-                        <input type="checkbox" checked>
-                          <div class="img-unchecked">
-                            <div class="unfill">
-                              <div class="material-symbols-sharp">
-                                favorite
-                              </div>
-                            </div>
-                          </div>
-                          <div class="img-checked">
-                            <div class="fill">
-                              <div class="material-symbols-sharp">
-                                favorite
-                              </div>
-                          </div>
-                      </label>
-                    </div>                   
                 </div>
               </article>
             </a>
-            <!-- La note enchantée -->  
-            <a href="/assets/restaurants/la-note-enchante.html">
+            <div class="icon-favorite">
+              <label class="container-heart">
+                <input type="checkbox" checked>
+                  <span class="img-unchecked">
+                    <span class="gradient-heart">
+                      <span class="material-symbols-sharp">
+                      favorite
+                      </span>
+                    </span>
+                  </span>
+                <span class="img-checked">
+                  <span class="empty-heart">
+                    <span class="material-symbols-sharp">
+                    favorite
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>   
+          </div>
+          <!-- La note enchantée -->
+          <div class="card-and-favorite">      
+            <a href="assets/restaurants/la-note-enchante.html">
               <article class="card">
                 <img
-                src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="La note enchantée"/>
+                  src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="La note enchantée"/>
                 <div class="new-restaurant"> 
-                  Nouveau
+                    Nouveau
+                </div>
+                <div class="card-content">
+                  <div class="restaurant-name">
+                    <h3>La note enchantée</h3>
+                        Charonne
                   </div>
-                  <div class="card-content">
-                    <div class="restaurant-name">
-                      <h3>La note enchantée</h3>
-                      Charonne
-                    </div>
-                    <div class="heart">
-                      <label class="container" style="font-size:20px">
-                        <input type="checkbox" checked>
-                          <div class="img-unchecked">
-                            <div class="unfill">
-                              <div class="material-symbols-sharp">
-                                favorite
-                              </div>
-                            </div>
-                          </div>
-                          <div class="img-checked">
-                            <div class="fill">
-                              <div class="material-symbols-sharp">
-                                favorite
-                              </div>
-                          </div>
-                      </label>
-                    </div>
                 </div>
               </article>
             </a>
-            <!-- À la française -->
-            <a href="/assets/restaurants/a-la-francaise.html">
-              <article class="card">
-               <img
+            <div class="icon-favorite">
+              <label class="container-heart">
+                <input type="checkbox" checked>
+                  <span class="img-unchecked">
+                    <span class="gradient-heart">
+                      <span class="material-symbols-sharp">
+                      favorite
+                      </span>
+                    </span>
+                  </span>
+                <span class="img-checked">
+                  <span class="empty-heart">
+                    <span class="material-symbols-sharp">
+                    favorite
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <!-- À la française -->
+            <div class="card-and-favorite">
+              <a href="assets/restaurants/a-la-francaise.html">
+                <article class="card">
+                <img
                 src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="À la française"/>
-              <div class="card-content">
+                <div class="card-content">
                   <div class="restaurant-name">
-                      <h3>À la française</h3>
+                    <h3>À la française</h3>
                      Cité Rouge
                   </div>
-                  <div class="heart">
-                    <label class="container" style="font-size:20px">
-                      <input type="checkbox" checked>
-                        <div class="img-unchecked">
-                          <div class="unfill">
-                            <div class="material-symbols-sharp">
-                              favorite
-                            </div>
-                          </div>
-                        </div>
-                        <div class="img-checked">
-                          <div class="fill">
-                            <div class="material-symbols-sharp">
-                              favorite
-                            </div>
-                        </div>
-                    </label>
-                  </div>                                  
                 </div>
               </article>
             </a>
-            <!-- Les délices des sens -->
-            <div class="resto-cart">
-            <a href="/assets/restaurants/le-delice-des-sens.html">
-              <article class="card">
-               <img
-                src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="Les délices des sens"/>
-              <div class="card-content">
-                  <div class="restaurant-name">
+            <div class="icon-favorite">
+              <label class="container-heart">
+                <input type="checkbox" checked>
+                  <span class="img-unchecked">
+                    <span class="gradient-heart">
+                      <span class="material-symbols-sharp">
+                      favorite
+                      </span>
+                    </span>
+                  </span>
+                <span class="img-checked">
+                  <span class="empty-heart">
+                    <span class="material-symbols-sharp">
+                    favorite
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>   
+          </div>          
+          <!-- Les délices des sens -->
+          <div class="card-and-favorite">
+              <a href="assets/restaurants/le-delice-des-sens.html">
+                <article class="card">
+                  <img
+                  src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Les délices des sens"/>
+                  <div class="card-content">
+                    <div class="restaurant-name">
                       <h3>Les délices des sens</h3>
-                      Folie-Méricourt
+                    Folie-Méricourt
+                    </div>
                   </div>
-                  <div class="heart">
-                    <label class="container" style="font-size:20px">
-                      <input type="checkbox" checked>
-                        <div class="img-unchecked">
-                          <div class="unfill">
-                            <div class="material-symbols-sharp">
-                              favorite
-                            </div>
-                          </div>
-                        </div>
-                        <div class="img-checked">
-                          <div class="fill">
-                            <div class="material-symbols-sharp">
-                              favorite
-                            </div>
-                        </div>
-                    </label>
-                  </div>
-                </div>
-              </article>
-            </a> 
-            
-           
-          </div>
-          </div>
-      </section>
-
-    </main>
+                </article>
+              </a>
+              <div class="icon-favorite">
+                <label class="container-heart">
+                  <input type="checkbox" checked>
+                    <span class="img-unchecked">
+                      <span class="gradient-heart">
+                        <span class="material-symbols-sharp">
+                        favorite
+                        </span>
+                      </span>
+                    </span>
+                  <span class="img-checked">
+                    <span class="empty-heart">
+                      <span class="material-symbols-sharp">
+                        favorite
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>
+        </div>
+     </div> 
+  </section>  
+</main>
     <footer>
-      <h1 class="ohmyfood-font">ohmyfood</h1>
+      <h2 class="ohmyfood-font">ohmyfood</h2>
       <div class="footer-links">
           <a href="#">
             <i class="fa-solid fa-utensils fa-sm"></i>
