@@ -62,13 +62,24 @@ header {
 
 .logo-header {
   width: 100%;
-  height: 64px;
   background-image: url(../images/logo/ohmyfood@2x.svg);
   background-repeat: no-repeat;
-  background-position: center 21px;
-  background-size: 186px 28px;
   font-size: 0px;
   color: transparent;
+}
+@media (max-width: 767px) {
+  .logo-header {
+    height: 64px;
+    background-position: center 21px;
+    background-size: 186px 28px;
+  }
+}
+@media (min-width: 768px) {
+  .logo-header {
+    height: 96px;
+    background-position: center 31px;
+    background-size: 230px 35px;
+  }
 }
 
 .location {
@@ -79,7 +90,11 @@ header {
   background-color: #eaeaea;
   width: 100%;
   height: 50px;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2) inset;
+}
+@media (max-width: 767px) {
+  .location {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2) inset;
+  }
 }
 .location a {
   font-size: 16px;
@@ -114,26 +129,45 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0px 50px 0px;
 }
 .reserver-explorer h2 {
   text-align: center;
-  padding: 20px 0px 15px 0px;
 }
 .reserver-explorer h3 {
   font-size: 18px;
   text-align: center;
   font-weight: 300;
   color: #353535;
-  max-width: 320px;
+  padding-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .reserver-explorer {
+    padding: 20px 0px 50px 0px;
+  }
+  .reserver-explorer h2 {
+    padding: 20px 0px 15px 0px;
+    max-width: 280px;
+  }
+  .reserver-explorer h3 {
+    max-width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .reserver-explorer {
+    padding: 20px 0px 30px 0px;
+  }
+  .reserver-explorer h2 {
+    font-size: 40px;
+    padding: 10px 0px 25px 0px;
+  }
+}
 /****** Lien - Explorer nos restaurants ***********/
 .cta {
   display: inline-block;
   border-radius: 50px;
   padding: 16px 26px;
-  margin: 30px 0px 30px 0px;
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -371,5 +405,12 @@ footer a {
 footer i {
   width: 25px;
 }
+
+/********** Media Queries ***********/
+/******* Breakpoint 1 : smartphone <768px ********/
+/******* Breakpoint 2 : Tablette Portrait 768px-999px (Zone de contenu : 700px) ********/
+/******* Breakpoint 3 : Tablette Paysage – PC Laptop 1000px-1279px (Zone de contenu : 960px) ********/
+/******* Breakpoint 4 :  PC Full HD  – PC Laptop 1280px-1599px (Zone de contenu : 1140px) ********/
+/******* Breakpoint 5 :  PC 4K   >1600px (Zone de contenu : 1140px ou 1350px) ********/
 
 /*# sourceMappingURL=style.css.map */
