@@ -1,0 +1,72 @@
+
+
+/****** Colors ***********/
+$light-grey: #f3f3f3;
+$dark-grey: #101010;
+$dark-grey-plus: #353535;
+$dark-max: #000000;
+$grey-icon: #7e7e7e;
+$grey--location: #eaeaea;
+$bg-grey-color: #f6f6f6;
+$bg-light-color: #ffffff;
+$purple: #9356dc;
+$green-light:#99E2D0;
+$green:#008766;
+$black: #000000;
+
+
+
+
+
+
+.restaurant-image { 
+    img {
+    width: 100%;
+    height: 275px;
+    }
+}
+
+
+main {
+    background-color: $bg-grey-color;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -50px;
+    
+    .menu {
+        display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        height: 500px;}
+
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+
+    .icon-favorite {
+        display: block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin: 0px 20px 0px 10px;
+      }
+
+    h1 {
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    }
+}
+
+
