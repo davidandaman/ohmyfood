@@ -11,7 +11,6 @@ main {
   margin-top: -50px;
 }
 main .menu {
-  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
@@ -41,6 +40,75 @@ main .menu {
   font-weight: 400;
   line-height: normal;
   margin: 0px;
+}
+
+.categorie-menu {
+  display: flex;
+  flex-direction: column;
+}
+.categorie-menu .titre-categorie {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+.categorie-menu .filet-titre-categorie {
+  display: block;
+  width: 40px;
+  border-bottom: #99E2D0 solid 3px;
+}
+.categorie-menu .dish {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.categorie-menu .card {
+  max-height: 69px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+}
+.categorie-menu .card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 16px 10px 16px;
+}
+.categorie-menu .dish-detail {
+  display: flex;
+  flex-direction: column;
+}
+.categorie-menu h3 {
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 4px;
+}
+.categorie-menu h4 {
+  overflow-y: scroll;
+  height: 20px;
+  color: #000;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.categorie-menu .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #353535;
+  text-align: center;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=menu.css.map */
