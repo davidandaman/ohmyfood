@@ -60,6 +60,24 @@ main {
 }
 
 
+
+
+$prog-bar-dur: 0ms;
+$prog-bar-delay: 150ms;
+$categorie-menu-delay: $prog-bar-dur + $prog-bar-delay;
+.categorie-menu {
+    animation: categorie-menu 1500ms $categorie-menu-delay;
+}
+@keyframes categorie-menu { 
+0% {
+    transform: translateX(-9999px);
+}
+100% {
+    transform: translateX(0);
+    }
+}
+
+
 .categorie-menu {
     display: flex;
     flex-direction: column;
@@ -83,8 +101,12 @@ main {
     .dish {
         margin-top:15px;
         margin-bottom: 15px;
-
         }
+
+    
+
+
+
 
 
         .card {

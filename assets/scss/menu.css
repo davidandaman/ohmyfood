@@ -43,6 +43,18 @@ main .menu {
 }
 
 .categorie-menu {
+  animation: categorie-menu 1500ms 150ms;
+}
+
+@keyframes categorie-menu {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.categorie-menu {
   display: flex;
   flex-direction: column;
 }
