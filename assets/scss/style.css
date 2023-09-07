@@ -310,6 +310,16 @@ header {
   padding-bottom: 15px;
 }
 
+.display-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .display-restaurant {
+    margin-top: 10px;
+  }
+}
 .restaurant-cards {
   display: flex;
   flex-direction: column;
@@ -377,10 +387,6 @@ header {
   }
   .restaurants h2 {
     padding-bottom: 15px;
-  }
-  .display-restaurant {
-    display: flex;
-    flex-direction: column;
   }
   .restaurant-cards {
     display: flex;
@@ -528,11 +534,5 @@ footer i {
     padding: 0px 70px 0px 0px;
   }
 }
-/********** Media Queries ***********/
-/******* Breakpoint 1 : smartphone <768px ********/
-/******* Breakpoint 2 : Tablette Portrait 768px-999px (Zone de contenu : 700px) ********/
-/******* Breakpoint 3 : Tablette Paysage – PC Laptop 1000px-1279px (Zone de contenu : 960px) ********/
-/******* Breakpoint 4 :  PC Full HD  – PC Laptop 1280px-1599px (Zone de contenu : 1140px) ********/
-/******* Breakpoint 5 :  PC 4K   >1600px (Zone de contenu : 1140px ou 1350px) ********/
 
 /*# sourceMappingURL=style.css.map */
