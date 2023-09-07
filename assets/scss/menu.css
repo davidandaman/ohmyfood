@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****** Colors ***********/
 .restaurant-image img {
   width: 100%;
@@ -41,11 +42,20 @@ main .menu {
   margin: 0px;
 }
 
-.categorie-menu {
-  animation: categorie-menu 1000ms 0ms;
+/****** Affichage des plats animé ***********/
+.slide1 {
+  animation: slide1 1000ms 0ms;
 }
 
-@keyframes categorie-menu {
+.slide2 {
+  animation: slide1 1500ms 0ms;
+}
+
+.slide3 {
+  animation: slide1 2000ms 0ms;
+}
+
+@keyframes slide1 {
   0% {
     transform: translateX(-9999px);
   }
@@ -76,18 +86,46 @@ main .menu {
   margin-bottom: 15px;
 }
 .categorie-menu .card {
+  position: relative;
+  overflow: hidden;
   height: 69px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
   background-color: #ffffff;
   padding: 0px;
   margin-bottom: 10px;
 }
+.categorie-menu .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s;
+}
+.categorie-menu .card:hover .content {
+  width: calc(100% - 60px);
+}
+.categorie-menu .hidden-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+}
+.categorie-menu .card:hover .hidden-icon {
+  transform: translateX(0%);
+}
 .categorie-menu .card-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 16px 10px 16px;
-  padding: 0px 0px 0px 0px;
+  padding: 0px;
 }
 .categorie-menu .dish-detail {
   display: flex;
@@ -107,7 +145,7 @@ main .menu {
 .categorie-menu h4 {
   overflow-y: scroll;
   height: 20px;
-  color: #000;
+  color: #000000;
   text-overflow: ellipsis;
   font-family: Roboto;
   font-size: 15.04px;
@@ -128,67 +166,18 @@ main .menu {
   padding: 15px;
   padding-left: 0px;
 }
-.categorie-menu .select-dish {
-  display: none;
-  transition: all 10s ease-in;
-}
-@keyframes slide-in {
-  from {
-    transform: translateX(200%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.categorie-menu .card:hover .select-dish {
+
+.btn-commander {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 39px;
-  width: 30px;
-  background-color: #99E2D0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  padding: 15px;
-  color: #ffffff;
-  animation: slide-in 1000ms;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-}
-
-.content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: width 0.5s;
-}
-
-.card:hover .content {
-  width: calc(100% - 60px);
-}
-
-.hidden-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 100%;
-  background-color: #99E2D0;
-  color: #ffffff;
-  display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s;
-  transform: translateX(100%);
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
-
-.card:hover .hidden-icon {
-  transform: translateX(0%);
+.btn-commander .cta {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*# sourceMappingURL=menu.css.map */

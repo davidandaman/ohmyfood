@@ -365,7 +365,17 @@ header {
       padding-bottom: 15px;
     }
   }
-  
+
+  .display-restaurant {
+    display: flex;
+    flex-direction: column;   
+  }
+  @media (max-width: 767px) {
+    .display-restaurant {
+      margin-top: 10px;
+    }
+  }
+
   .restaurant-cards {
     display: flex;
     flex-direction: column;
@@ -418,9 +428,7 @@ header {
 
   .card-and-favorite {
     background-color: transparent;
-      }
-
-
+  }
 
 @media (min-width: 768px) and (max-width: 1024px)  {
     .restaurants {
@@ -442,11 +450,6 @@ header {
           padding-bottom: 15px;
         }
       }
-
-    .display-restaurant {
-      display: flex;
-      flex-direction: column;
-    }
 
   .restaurant-cards {
     display: flex;
@@ -471,20 +474,20 @@ header {
   }
 
 .gradient-heart .material-symbols-sharp {
-      font-variation-settings:
-      'FILL' 1,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 24;
-      font-size: 30px;      
-      background-color: rgb(147, 86, 220);
-      background-image: linear-gradient(-200deg, rgba(255, 121, 218, .8), rgba(255,255,255,0));
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color:transparent;
-      transition-timing-function: ease-out;
-      transition: all 450ms;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 30px;      
+    background-color: rgb(147, 86, 220);
+    background-image: linear-gradient(-200deg, rgba(255, 121, 218, .8), rgba(255,255,255,0));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    transition-timing-function: ease-out;
+    transition: all 450ms;
     }
 
 .empty-heart .material-symbols-sharp {
@@ -547,7 +550,6 @@ header {
 }
 
   /****** Footer ***********/
-
   footer {
     display: flex;
     flex-direction: column;
@@ -589,7 +591,6 @@ header {
   }
 
   @media (min-width: 768px) {
-   
     .footer-links {
       flex-direction: row;
       margin-left: 50px;
@@ -597,7 +598,6 @@ header {
     a {
       padding-left: 15px;   
     }
-
   }
 
   .item-1 {
@@ -613,24 +613,3 @@ header {
   padding: 0px 70px 0px 0px;
   }
 }
-
-
-
-
-
-/********** Media Queries ***********/
-
-
-  /******* Breakpoint 1 : smartphone <768px ********/
-
-
-  /******* Breakpoint 2 : Tablette Portrait 768px-999px (Zone de contenu : 700px) ********/
-
-
-  /******* Breakpoint 3 : Tablette Paysage – PC Laptop 1000px-1279px (Zone de contenu : 960px) ********/
-
-
-  /******* Breakpoint 4 :  PC Full HD  – PC Laptop 1280px-1599px (Zone de contenu : 1140px) ********/
-
-
-  /******* Breakpoint 5 :  PC 4K   >1600px (Zone de contenu : 1140px ou 1350px) ********/
