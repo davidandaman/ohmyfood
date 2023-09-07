@@ -14,7 +14,6 @@ main .menu {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
-  height: 500px;
 }
 
 .header-menu {
@@ -43,7 +42,7 @@ main .menu {
 }
 
 .categorie-menu {
-  animation: categorie-menu 1500ms 150ms;
+  animation: categorie-menu 1000ms 0ms;
 }
 
 @keyframes categorie-menu {
@@ -77,18 +76,24 @@ main .menu {
   margin-bottom: 15px;
 }
 .categorie-menu .card {
-  max-height: 69px;
+  height: 69px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+  background-color: #ffffff;
+  padding: 0px;
+  margin-bottom: 10px;
 }
 .categorie-menu .card-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 16px 10px 16px;
+  padding: 0px 0px 0px 0px;
 }
 .categorie-menu .dish-detail {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 15px;
 }
 .categorie-menu h3 {
   overflow-y: scroll;
@@ -97,7 +102,7 @@ main .menu {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding-bottom: 4px;
+  line-height: 28px;
 }
 .categorie-menu h4 {
   overflow-y: scroll;
@@ -105,10 +110,9 @@ main .menu {
   color: #000;
   text-overflow: ellipsis;
   font-family: Roboto;
-  font-size: 15.043px;
+  font-size: 15.04px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 .categorie-menu .price {
   display: flex;
@@ -117,10 +121,74 @@ main .menu {
   color: #353535;
   text-align: center;
   font-size: 15.043px;
+  height: 44px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 10px;
+  padding: 15px;
+  padding-left: 0px;
+}
+.categorie-menu .select-dish {
+  display: none;
+  transition: all 10s ease-in;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.categorie-menu .card:hover .select-dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 39px;
+  width: 30px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px;
+  color: #ffffff;
+  animation: slide-in 1000ms;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s;
+}
+
+.card:hover .content {
+  width: calc(100% - 60px);
+}
+
+.hidden-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  transform: translateX(100%);
+}
+
+.card:hover .hidden-icon {
+  transform: translateX(0%);
 }
 
 /*# sourceMappingURL=menu.css.map */
