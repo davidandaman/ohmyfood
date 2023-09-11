@@ -101,21 +101,6 @@ header {
   padding-left: 15px;
 }
 
-/****** Lien Go Back Header - Page Restaurants ***********/
-.icon-goback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 63px;
-  position: absolute;
-  top: 0px;
-  left: 14px;
-}
-.icon-goback a {
-  color: #353535;
-}
-
 /****** Réserver-et-Fonctionnement ***********/
 .reserver-fonctionnement {
   display: flex;
@@ -486,7 +471,7 @@ footer {
 @media (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
-    padding: 60px 70px 8px 40px;
+    padding: 60px 70px 12px 40px;
   }
 }
 footer h2 {
@@ -525,6 +510,7 @@ footer i {
   }
   .item-1 {
     order: 1;
+    margin-top: -2px;
   }
   .item-2 {
     order: 3;

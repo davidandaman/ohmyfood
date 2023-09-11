@@ -1,5 +1,20 @@
 @charset "UTF-8";
 /****** Colors ***********/
+/****** Lien Go Back Header - Page Restaurants ***********/
+.icon-goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 64px;
+  position: absolute;
+  top: 0px;
+  left: 14px;
+}
+.icon-goback a {
+  color: #353535;
+}
+
 .restaurant-image img {
   width: 100%;
   height: 275px;
@@ -115,7 +130,7 @@ main .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s;
+  transition: transform 0.4s;
   transform: translateX(100%);
 }
 .categorie-menu .card:hover .hidden-icon {
@@ -134,8 +149,11 @@ main .menu {
   padding: 15px;
 }
 .categorie-menu h3 {
-  overflow-y: scroll;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 500px;
   text-overflow: ellipsis;
+  margin: 0;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -176,8 +194,105 @@ main .menu {
   padding-top: 20px;
 }
 .btn-commander .cta {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #ffffff;
+  }
+  main {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+  }
+  .header-menu {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+  }
+  .header-menu h1 {
+    padding-right: 10px;
+  }
+  .restaurant-image img {
+    object-position: 50% 58%;
+  }
+  .icon-goback {
+    height: 96px;
+    left: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    width: 1005px;
+  }
+  main .menu {
+    width: 634px;
+  }
+  .header-menu {
+    width: 634px;
+  }
+  .header-menu h1 {
+    padding-right: 10px;
+  }
+  .restaurant-image img {
+    height: 385px;
+    object-fit: cover;
+  }
+  .icon-goback {
+    height: 96px;
+    left: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    width: 700px;
+  }
+  main .menu {
+    width: 500px;
+  }
+  .header-menu {
+    width: 500px;
+  }
+  .header-menu h1 {
+    padding-right: 10px;
+  }
+  .restaurant-image img {
+    height: 323px;
+    object-fit: cover;
+  }
+  .icon-goback {
+    height: 96px;
+    left: 24px;
+  }
+}
+/****** Nom des plats - text-overflow ... ***********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .categorie-menu h3 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .categorie-menu h3 {
+    max-width: 230px;
+  }
+}
+@media (max-width: 374px) {
+  .header-menu h1 {
+    font-size: 24px;
+  }
+  .categorie-menu h3 {
+    max-width: 180px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
