@@ -12,7 +12,6 @@ $green-light:#99E2D0;
 $green:#008766;
 $black: #000000;
 
-
 /****** Lien Go Back Header - Page Restaurants ***********/
 .icon-goback {
     display: flex;
@@ -30,17 +29,20 @@ $black: #000000;
   }
 
 .restaurant-image { 
+    height: 270px;
     img {
-    width: 100%;
-    height: 275px;
-    }
+        height: 270px;
+        object-fit: cover;
+        width: 100%;
+        object-position: 50% 45%;        
+    }  
 }
 
 main {
     background-color: $bg-grey-color;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    margin-top: -50px;
+    margin-top: -55px;
     
     .menu {
         padding-left: 15px;
@@ -73,6 +75,7 @@ main {
     font-weight: 400;
     line-height: normal;
     margin: 0px;
+    letter-spacing: .05rem;
     }
 }
 
@@ -98,7 +101,6 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
     transform: translateX(0);
     }
 }
-
 
 .categorie-menu {
     display: flex;
@@ -129,10 +131,10 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
         position: relative;
         overflow: hidden;
         height: 69px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
         background-color: $bg-light-color;
         padding: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         }
 
     .content {
@@ -243,7 +245,9 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
             display: flex;
             margin-left: auto;
             margin-right: auto;
-           
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+
             .menu {
                 display: flex;
                 flex-direction: column;
@@ -264,22 +268,16 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
             }
         }
 
-        .restaurant-image { 
-            img {
-            object-position: 50% 58%; 
-            }
-        }
-
         .icon-goback {
             height:96px;
             left: 24px;
+        }
     }
-     }
-
 
     @media (min-width:1024px) {
-    main {
+        main {
         width: 1005px;
+        margin-top: 72px;
        
         .menu {
             width: 634px;
@@ -294,19 +292,19 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
             }
         }
 
+        .icon-goback {
+            height:96px;
+            left: 24px;
+        }
+        
         .restaurant-image { 
             img {
             height: 385px;
             object-fit: cover;
+            object-position: 50% 60%;    
             }
         }
-
-        .icon-goback {
-            height:96px;
-            left: 24px;
     }
-}
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
     main {
@@ -314,30 +312,29 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
        
         .menu {
             width: 500px;
-            }
         }
+    }
 
-        .header-menu {
-            width: 500px;
+    .header-menu {
+        width: 500px;
  
-            h1 {
-            padding-right: 10px;
-            }
+        h1 {
+        padding-right: 10px;
         }
+    }
 
-        .restaurant-image { 
-            img {
-            height: 323px;
-            object-fit: cover;
-            }
+    .restaurant-image { 
+        img {
+        height:260px;
+        object-fit: cover;
         }
+    }
 
-        .icon-goback {
-            height:96px;
-            left: 24px;
+    .icon-goback {
+        height:96px;
+        left: 24px;
     }
  }
-
 
 /****** Nom des plats - text-overflow ... ***********/
  @media (min-width: 768px) and (max-width: 1023px) {
@@ -345,16 +342,18 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
         max-width: 400px;            
     }
  }
+
  @media (min-width: 375px) and (max-width: 767px) {
     .categorie-menu h3 {
-        max-width: 230px;            
+        max-width: 220px;            
     }
  }
+
  @media (max-width: 374px) {
     .header-menu h1 {
         font-size: 24px;
         }
     .categorie-menu h3 {
     max-width: 180px;
+    }
 }
- }
