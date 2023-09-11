@@ -159,22 +159,6 @@ header {
   }
 }
 
-/****** Lien Go Back Header - Page Restaurants ***********/
-.icon-goback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 63px;
-  position: absolute;
-  top: 0px;
-  left: 14px;
-
-  a {
-    color: $dark-grey-plus;
-  }
-}
-
 /****** Réserver-et-Fonctionnement ***********/
 .reserver-fonctionnement {
   display: flex;
@@ -357,7 +341,6 @@ header {
 }
 
 /****** Restaurants - Global ***********/
-  
   .restaurants {
     padding: 60px 17px 60px 17px;
 
@@ -558,7 +541,7 @@ header {
 
     @media (min-width: 768px) {
       flex-direction: row-reverse;
-      padding: 60px 70px 8px 40px;
+      padding: 60px 70px 12px 40px;
     }
 
     h2 {
@@ -602,6 +585,7 @@ header {
 
   .item-1 {
   order: 1;
+  margin-top: -2px;
   }
 
   .item-2 {
