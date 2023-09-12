@@ -10,7 +10,8 @@ $bg-light-color: #ffffff;
 $purple: #9356dc;
 $green-light:#99E2D0;
 $green:#008766;
-$black: #000000;
+$dark-purple: #733ab9;
+$light-purple: #9356dc;
 
 /****** Mixins ***********/
 
@@ -68,6 +69,10 @@ $black: #000000;
   font-family: "Shrikhand", cursive;
 }
 /****** General ***********/
+html {
+  min-height:100%;
+}
+
 * {
   margin: 0;
 }
@@ -90,7 +95,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: $black;
+  color: $dark-max;
 }
 
 .card {
@@ -526,6 +531,7 @@ header {
   padding: 7px 14px 6px 12px;
   margin-top: -160px;
   margin-right: 12px;
+  z-index: 0;
 }
 
 /****** Footer ***********/
@@ -593,3 +599,91 @@ header {
   padding: 0px 70px 0px 0px;
   }
 }
+
+
+
+
+/*  Pour la page loader.html */
+.effet-sombre { 
+    background-color: rgb(222, 160, 222);
+    opacity: .9;
+    margin: auto;
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: rgb(56, 31, 57) 20px 22px 70px 4px;
+  }
+
+.sous-loader {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background-color: $dark-purple;
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  opacity: 1;
+  z-index: 999;
+  border: 3px solid $light-purple;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px 0px;
+}
+
+.chargement {
+/*  Création du loader */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-light-color;
+  border-top: 30px solid  $dark-purple;
+  border-right: 30px solid $dark-purple;
+  border-bottom: 30px solid  $light-purple;
+  border-left: 30px solid  $light-purple;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+/* Placement du loader au milieu de la page */
+  margin: auto;
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+/* Animation pour les différents navigateurs */
+  -webkit-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite ;
+  animation: spin 1s linear infinite ;
+
+    span {
+      color: $dark-purple;
+      font-size: 7.5em;
+    }
+  }
+
+  /* Animation du loader */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Pour les anciens navigateurs ajout -webkit- */
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  /*  il n'est pas possible de réaliser l'affichage
+   d'un loader pendant une durée spécifique sans utiliser JavaScript.
+    Le langage HTML et les feuilles de style CSS ne permettent pas de
+    contrôler le temps d'affichage d'un élément de manière autonome */
+
+
+
