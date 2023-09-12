@@ -605,15 +605,15 @@ header {
 
 /*  Pour la page loader.html */
 .effet-sombre { 
-    background-color: rgb(222, 160, 222);
+    background-color: rgb(255, 255, 255);
     opacity: .9;
     margin: auto;
     position: absolute;
     top:0; left:0; right:0; bottom:0;
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
-    box-shadow: rgb(56, 31, 57) 20px 22px 70px 4px;
+    box-shadow: rgb(255, 255, 255) 20px 22px 70px 4px;
   }
 
 .sous-loader {
