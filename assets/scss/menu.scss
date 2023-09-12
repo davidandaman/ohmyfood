@@ -94,11 +94,11 @@ $slide1-delay: $prog-bar-dur + $prog-bar-delay;
 }
 
 @keyframes slide1 { 
-0% {
-    transform: translateX(-9999px);
-}
-100% {
-    transform: translateX(0);
+    0% {
+            transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 

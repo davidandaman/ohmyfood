@@ -609,9 +609,5 @@ footer i {
     -webkit-transform: rotate(360deg);
   }
 }
-/*  il n'est pas possible de réaliser l'affichage
- d'un loader pendant une durée spécifique sans utiliser JavaScript.
-  Le langage HTML et les feuilles de style CSS ne permettent pas de
-  contrôler le temps d'affichage d'un élément de manière autonome */
 
 /*# sourceMappingURL=style.css.map */
